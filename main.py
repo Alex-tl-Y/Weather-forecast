@@ -117,8 +117,7 @@ def setup_forecast(event):
         windspeedLabel = tk.Label(windFrame, text = wind_direction + " " + str(wind_speed) + "km/h", bg = windFrame["bg"], font = ("Times New Roman", 15))
         windTitle.place(relx = 0.5, rely = 0.1, anchor = "center")
         windspeedLabel.place(relx = 0.5, rely = 0.3)      
-
-def      
+       
 # API call to get weather data
 def get_weather(long: str, lat: str):
     url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={long}&current=temperature_2m,visibility,relative_humidity_2m,is_day,apparent_temperature,precipitation,rain,showers,snowfall,weather_code,wind_speed_10m,wind_direction_10m,is_day&timezone=America%2FNew_York"
